@@ -19,11 +19,11 @@ def ternary_search(arr, target): #defined a function for ternary search with 2 p
 
         #below we are checking the rest of the elements that are not the midpoints
         #if the element checked doesn't meet the requirements, we move the pointers to the next element (reducing the search space)
-        if target < arr[mid1]: #if the target element is less than the midpoint 1
+        if target < arr[mid1]: #if the target element is less than the midpoint 1(if target is in the left part of the array)
             right = mid1 - 1 # we move the right pointer to the midpoint 1 - 1
-        elif target > arr[mid2]: # if the target element is greater than the midpoint 2
+        elif target > arr[mid2]: # if the target element is greater than the midpoint 2(if target is in the right part of the array)
             left = mid2 + 1 # we move the left pointer to the midpoint 2 + 1
-        else: # if the target element is neither less than the midpoint 1 nor greater than the midpoint 2
+        else: # if the target element is neither less than the midpoint 1 nor greater than the midpoint 2 (target is in the middle part of the array)
             left = mid1 + 1 # we move the left pointer to the midpoint 1 + 1
             right = mid2 - 1 # we move the right pointer to the midpoint 2 - 1
 
