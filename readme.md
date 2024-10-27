@@ -6,3 +6,4 @@ The function returns -1 if the target is not found.
 We finish of by testing our algorithm by presenting a list to test its functionality. We create a user input function to get the user's input on which target element they would like to find, and finally print the result for the user to see.
 
 
+File 2: ternary_search, is the solution to a challenge where we are required to find a specific target element in a sorted array. We begin by defining a python function 'ternary_search' with two parameters 'arr' and 'target', these two parameters contain the array to be searched and the target element(input) we are looking for. The next section we need to define a range of the array(start and finish). We use a while loop to iterate through the array, the condition of the loop is as long as the left pointer is less than or equal to right, to ensure we go through every element in the list.
