@@ -8,7 +8,7 @@ def search(nums, target): #we define a function for binary search with 2 paramet
     
     while left <= right: #this is a while loop to loop over the array until the left pointer is less than or equal to the right pointer(ensures all elements are searched)
         
-        mid = left + (right - left) // 2 #this is how we get the midpoint, by idving the total length of the array by 2
+        mid = left + (right - left) // 2 #this is how we get the midpoint, by diving the total length of the array by 2
         
         if nums[mid] == target: #this if statement checks if the midpoint is equal to the target, if yes then it returns the index of the midpoint(same as target index)ending the loop
             return mid
